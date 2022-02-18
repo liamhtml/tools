@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="A website for notetaking/listing.">
+    <meta name="keywords" content="Note, Note-taking, Notetaking, jot, Write, quick, easy, take note, classic,">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jot</title>
+    <link rel="shortcut icon" type="image/icon" href="https://raw.githubusercontent.com/liamhtml/jot/main/assets/img/jot.ico">
+    <!-- Icon made by Freepik from www.flaticon.com -->
+    <style>
+      html {
+        text-align: center;
+        font-family: monospace;
+      }
+
+      #jot {
+        border: 3px #222222 solid;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding: 3.5px;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+      }
+
+      #new-note {
+        background-color: #222222;
+        color: white;
+        padding: 5.3px;
+        border: 3px #222222 solid;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+
+      #new-note:hover {
+        background-color: #000000;
+        color: white;
+        padding: 5.3px;
+        border: 3px #000000 solid;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      h1 {
+        font-weight: bolder;
+        color: #222222;
+      }
+
+      p {
+        color: #222222;
+      }
+
+      span {
+        color: #000000;
+      }
+
+      a:link {
+        color: #000000;
+      }
+
+      a:visited {
+        color: #222222;
+      }
+
+      a:hover {
+        color: #222222;
+        text-decoration: none;
+      }
+
+      a:active {
+        color: #222222;
+      }
+
+      ::placeholder {
+        color: #c8c8c8;
+        opacity: 1;
+        font-family: monospace;
+      }
+
+      :-ms-input-placeholder {
+        color: #c8c8c8;
+        font-family: monospace;
+      }
+
+      ::-ms-input-placeholder {
+        color: #c8c8c8;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="margin: 10px" contenteditable="true" spellcheck="false">jot</h1>
+    <textarea rows="5" cols="30" id="jot" placeholder="Jot down your notes here!"></textarea>
+    <br>
+    <input type="checkbox" id="spellcheck-checkbox" onclick="toggleSpellCheck()" checked><span style="display: inline; font-weight: bold;">  Spellcheck</span>
+    <br>
+    <br>
+    <a href="https://liamhtml.GitHub.io/jot/" id="new-note" target="_blank">New Note</a>
+    <br>
+    <br>
+    <a href="https://GitHub.com/liamhtml" target="_blank" style="margin-top: 5px; display: inline-block;">GitHub</a>
+    <br>
+    <a href="dark.html">Dark theme (make sure to copy your notes before clicking)</a>
+    <script>
+      function toggleSpellCheck() {
+        var checkBox = document.getElementById("spellcheck-checkbox");
+        if (checkBox.checked == true) {
+          document.getElementsByTagName("TEXTAREA")[0].setAttribute("spellcheck", "true");
+        } else {
+          document.getElementsByTagName("TEXTAREA")[0].setAttribute("spellcheck", "false");
+        }
+      }
+    </script>
+  </body>
+</html>
