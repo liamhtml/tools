@@ -1,5 +1,5 @@
 # tools
 random useful tools
 ## text
-- [kent](https://liamp.dev/tools/kent), text steganography tool
-- [jot](https://liamp.dev/tools/jot), notetaking
+- [kent](https://liampreisser.com/tools/kent), text steganography tool
+- [jot](https://liampreisser.com/tools/jot), notetaking
